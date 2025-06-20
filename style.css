@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     border-radius: 12px;
     box-shadow: 0px 1px 15px 4px rgb(25, 113, 190);
+    z-index: 1;
 }
 
 .nav h2{
@@ -76,4 +77,26 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
+}
+
+#blur1{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(34, 94, 147);
+    border-radius: 999999px;
+    position: absolute;
+    left: -140px;
+    z-index: 0;
+    filter: blur(80px);
+}
+#blur2{
+    height: 300px;
+    width: 300px;
+    background-color: #ACAAFF;
+    border-radius: 999999px;
+    position: absolute;
+    right: -150px;
+    top: 250px;
+    z-index: 0;
+    filter: blur(80px);
 }
