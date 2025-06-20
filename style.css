@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 body {
@@ -12,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 
@@ -26,7 +27,7 @@ body {
     justify-content: space-between;
     border-radius: 12px;
     box-shadow: 0px 1px 15px 4px rgb(25, 113, 190);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .nav h2{
@@ -47,6 +48,7 @@ body {
     cursor: pointer;
     position: relative;
     transition: .3s;
+    color: black;
 }
 
 .nav ul li::after{
@@ -97,6 +99,79 @@ body {
     position: absolute;
     right: -150px;
     top: 250px;
-    z-index: 0;
     filter: blur(80px);
 }
+
+ #hero{
+    width: 80%;
+    height: 40rem;
+    top: 150px;
+    /* z-index: 1; */
+    color: white; 
+    position: absolute;
+}
+
+.title{
+    width: 60%;
+}
+
+#hero h1{
+    color: white;
+    font-size: 75px;
+}
+#hero p{
+    color: white;
+    font-size: 18px;
+    font-weight:lighter;
+}
+
+#hero img{
+    height: 476px;
+    width: 400px;
+    position: absolute;
+    right: 15px;
+    top: -5px;
+    transition: all 0.3s ease-in-out;
+}
+#hero img:hover{
+    transform: scale(1.1);
+}
+
+#buttons{
+    position: relative;
+    top: 50px;
+    height: 10%;
+    width: 400px;
+}
+
+#buttons .btn1{
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 1.3vw;
+    padding: 7px 20px;
+    background: linear-gradient(90deg,rgba(172, 170, 255, 1) 0%, rgba(185, 212, 254, 1) 100%);
+    border-radius: 22px;
+    text-shadow: 0px 0px 10px #030303;
+    border: solid 1px white;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+#buttons .btn2{
+    text-decoration: none;
+    font-size: 1.3vw;
+    padding: 7px 20px;
+    border-radius: 22px;
+    border: solid 1px white;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+#buttons .btn1:hover{
+    background: linear-gradient(90deg,rgba(185, 212, 254, 1) 0%, rgba(172, 170, 255, 1) 100%);
+    transform: translateX(5px);
+}
+#buttons .btn2:hover{
+    background: linear-gradient(90deg,rgb(61, 124, 224) 0%, rgba(172, 170, 255, 1) 100%);
+    transform: translateX(4px);
+}
+
