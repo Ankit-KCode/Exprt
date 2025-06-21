@@ -6,13 +6,14 @@
     color: rgb(255, 255, 255);
 }
 
-body {
+html, body {
     width: 100%;
-    height: 100vh;
-    display: flex;
+    height: 100vh; 
+    display: flex; 
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    background-color: black;
 }
 
 
@@ -27,7 +28,8 @@ body {
     justify-content: space-between;
     border-radius: 12px;
     box-shadow: 0px 1px 15px 4px rgb(25, 113, 190);
-    /* z-index: 1; */
+    z-index: 10;
+    position: fixed;
 }
 
 .nav h2{
@@ -76,9 +78,11 @@ body {
 .container {
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: flex;   
     justify-content: center;
     background-color: black;
+    position: relative;
+    /* overflow: hidden; */
 }
 
 #blur1{
@@ -134,7 +138,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 #hero img:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 #buttons{
@@ -175,3 +179,38 @@ body {
     transform: translateX(4px);
 }
 
+.strip{
+    margin-top: 60px;
+    width: 60%;
+    height: 65px;
+    background-color: rgba(20, 135, 235, 0.366);
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    box-shadow: 0px 1px 120px 4px rgb(59, 146, 221);
+    /* filter: blur(80px); */
+    border: solid 1px white;
+    border-radius: 9999999px;
+    z-index: 1;
+    padding: 20px;
+    transition: all 0.6s ease-in-out;
+}
+
+.strip:hover{
+    box-shadow: 0px 1px 120px 4px rgb(103, 218, 218);
+}
+
+.name{
+    margin-top: 45px;
+    text-align: center;
+}
+
+
+/* --------------------------- CONVERT PAGE -------------------------- */
+.convert{
+    position: absolute;
+    top: 100%;
+    /* display: flex; */
+    width: 80%;
+    /* background-color: #ACAAFF; */
+}
