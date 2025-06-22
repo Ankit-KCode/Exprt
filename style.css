@@ -208,9 +208,39 @@ html, body {
 
 /* --------------------------- CONVERT PAGE -------------------------- */
 .convert{
-    position: absolute;
+    position: relative;
     top: 100%;
-    /* display: flex; */
     width: 80%;
-    /* background-color: #ACAAFF; */
+}
+
+
+.convert input{
+    margin: 20px 20px 20px 0px;
+    width: 80%;
+    height: 45px;
+    border: solid 3px #ACAAFF;
+    color: #030303;
+    font-size: medium;
+    border-radius: 8px;
+}
+.convert button{
+    width: 100px;
+    height: 40px;
+    border: solid 3px #ACAAFF;
+    border-radius: 8px;
+    font-size: large;
+    text-shadow: 0px 0px 10px #030303;
+    background: linear-gradient(90deg,rgba(172, 170, 255, 1) 0%, rgba(185, 212, 254, 1) 100%);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#resultBox{
+    margin-top: 25px;
+    width: 80%;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: large;
+    padding: 10px 40px 20px 20px;
 }
