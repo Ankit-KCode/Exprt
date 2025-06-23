@@ -44,17 +44,18 @@
         </div>
 
         <div class="convert">
-            <h1 style="font-size: 50px;">Convert</h1>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quidem saepe porro beatae veritatis fugiat minus laboriosam ipsum rerum, quis tempore commodi ratione doloribus neque odit perspiciatis. Distinctio, reprehenderit pariatur.</span> <br>
-
-            <!-- <form action="">
-                <h2>Choose What to do</h2>
-                <select name="" id=""></select>
-            </form> -->
-
+            <h1 style="font-size: 50px;">CONVERT EXP</h1>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quidem saepe porro beatae veritatis fugiat minus laboriosam <br> ipsum rerum, quis tempore commodi ratione doloribus neque odit perspiciatis. Distinctio, reprehenderit pariatur.</span> <br><br><br>
+            
+            <label for="expressionType">Choose What Do You Want to Do :</label><br>
+            <select id="expressionType" placeholder="Click To Select">
+                <option value="infixToPostfix">Infix To Postfix</option>
+                <option value="infixToPrefix">Infix To Postfix</option>
+                <option value="postfixToInfix">Postfix To Infix</option>
+            </select> <br>
             <input type="text" id="infixInput" placeholder="Enter Your Infix Expression"> <br>
             <button onclick="convertExp()">Convert</button>
-            <h3>Postfix Expression: </h3>
+            <h3>Result Expression: </h3>
 
             <div id="resultBox">
                 <p id="postfixResult"></p>

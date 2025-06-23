@@ -210,7 +210,34 @@ html, body {
 .convert{
     position: relative;
     top: 100%;
+    width: 100%;
+    padding: 150px;
+    background: linear-gradient(0deg, #0b3b5d, #000000);
+}
+
+.container label{
+    font-size: 22px;
+    padding: 4px 8px 4px 8px;
+    border: solid 1px white;
+    border-radius: 9999999px;
+}
+
+.container select{
+    margin-top: 20px;
     width: 80%;
+    height: 45px;
+    color: #030303;
+    border-radius: 8px;
+    border: solid 3px #acaaff;
+    background: linear-gradient(25deg, #ACAAFF, #ffffff);
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.container option{
+    color: #030303;
+    font-size: medium;
 }
 
 
@@ -244,5 +271,5 @@ html, body {
     border: 1px solid white;
     border-radius: 6px;
     font-size: large;
-    padding: 10px 40px 20px 20px;
+    padding: 10px 20px 20px 15px;
 }
