@@ -50,20 +50,18 @@
             <label for="expressionType">Choose What Do You Want to Do :</label><br>
             <select id="expressionType" placeholder="Click To Select">
                 <option value="infixToPostfix">Infix To Postfix</option>
-                <option value="infixToPrefix">Infix To Postfix</option>
+                <option value="infixToPrefix">Infix To Prefix</option>
                 <option value="postfixToInfix">Postfix To Infix</option>
             </select> <br>
-            <input type="text" id="infixInput" placeholder="Enter Your Infix Expression"> <br>
+            <input type="text" id="inputExpr" placeholder="Enter Your Expression"> <br>
             <button onclick="convertExp()">Convert</button>
             <h3>Result Expression: </h3>
 
             <div id="resultBox">
-                <p id="postfixResult"></p>
+                <p id="Result"></p>
             </div>
 
         </div>
-
-
         
     </div>
 </body>
