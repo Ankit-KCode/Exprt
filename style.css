@@ -5,6 +5,8 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(255, 255, 255);
     scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
 }
 
 html, body {
@@ -12,9 +14,10 @@ html, body {
     height: 100vh; 
     display: flex; 
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     overflow-x: hidden;
     background-color: black;
+    flex-direction: column;
 }
 
 
@@ -278,4 +281,38 @@ html, body {
     border-radius: 6px;
     font-size: large;
     padding: 10px 20px 20px 15px;
+}
+
+footer{
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    bottom: -137%;
+    align-items: center;
+    background-color: #3c9291;
+    padding: 50px;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-widget{
+    width: calc(20% - 30px);
+    margin: 0 15px 50px;
+    padding: 0 12px;
+}
+.footer-widget:nth-child(1){
+    width: calc(40% - 50px);
+    margin-right: 15px;
 }
